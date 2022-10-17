@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/animations.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/input.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../styles/flex.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Nome do usuário Github</title>
+  </head>
+  <body class="container flex flex-column">
+    <header class="flex flex-column gap20 header-desktop">
+      <section class="user flex align-center justify-center gap20">
+        <div>
+          <a href="" id="git-link">
+            <img id="avatar-img" src="" alt="">
+          </a>
+        </div>
+        <div>
+          <h1 id="user-name"></h1>
+          <p id="user-bio"></p>
+        </div>
+      </section>
+      <nav class="flex justify-center gap20">
+        <a href="" id="user-email">
+          <button class="button-nav">Email</button>
+        </a>
+        <a href="../../index.html"><button class="button-nav">Trocar de usuário</button></a>
+      </nav>
+    </header>
+    <main>
+      <div class="loading-repos flex flex-column align-center gap32">
+        <img src="../../img/octocat.png" alt="github-logo">
+        <p>Carregando positórios!</p>
+      </div>
+      <ul class="card-list flex-column gap20 ul-desktop"> 
+        <div class="empty-repos">
+          <h3>Este usuário não possui repositórios públicos!</h3>
+        </div>       
+      </ul>      
+    </main>
+    <script src="./index.js"></script>
+    <script src="../../scripts/renders.js"></script>
+  </body>
+</html>

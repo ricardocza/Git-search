@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/flex.css" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <title>Git Search</title>
+  </head>
+  <body class="flex flex-column body-desktop">
+    <aside class="flex">
+      <section class="flex flex-column gap32 home-mobile desktop">
+        <h1 class="title1">Git Search</h1>
+        <h2 class="title2">Encontre e se conecte com profissionais de forma rápida e fácil</h2>
+        <div class="recent flex gap16 align-center">
+          <p class="text2">Achados Recentemente:</p>
+          <div class="flex gap16">
+            <ul class="recent-users flex gap20">
+            </ul>
+          </div>
+        </div>
+      </section>
+    </aside>
+    <main class="flex">
+      <section class="flex flex-column gap32 home-mobile desktop">
+        <h2 class="title2">Procurar por um usuário</h2>
+        <div class="flex flex-column gap16">
+          <label class="title3" for="git-user">Usuário github</label>
+          <input id="git-user" type="text" placeholder="Digite um usuário do github aqui...">
+          <p class="alert hide">Usuário não encontrado!</p>
+          <button id="button-search" class="button-search-disabled animate-button">Ver perfil do github</button>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/renders.js"></script>
+    <script src="./pages/home/index.js"></script>
+  </body>
+</html>

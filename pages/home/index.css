@@ -1,0 +1,130 @@
+body {
+    overflow-y: hidden;
+}
+
+aside {
+    background-color: var(--color-brand-1);
+    color: var(--color-grey-7);
+}
+
+aside section {
+    max-width: 25rem;
+    animation: aside-intro 0.5s cubic-bezier(0, 0, 0.5, 1.5);
+
+}
+
+aside section .recent {
+    min-height: 5.75rem;
+}
+
+main section {
+    max-width: 25rem; 
+    animation: main-intro 0.5s cubic-bezier(0, 0, 0.5, 1.5);
+}
+
+main div label {
+    margin-bottom: 0.75rem;
+}
+
+main div button {
+    margin-bottom: 1.25rem;
+    width: 100%;       
+}
+
+.recent-users li {
+    position: relative;
+}
+
+.recent-users li figcaption {
+    padding: 0 0.5rem;
+    position: absolute;
+    bottom: -2rem;
+    width: max-content;
+    white-space: wrap;
+    left: -3.125rem;
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+    border-radius: var(--radius-default1);
+    animation-name: animate-figcaption;
+    animation-duration: 0.5s;    
+    
+}
+
+figure {
+    width: 45px;
+    height: 45px;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+figure:hover {
+    transition: 0.3s;
+    outline: 1.5px solid var(--color-grey-7);
+    scale: 1.2;
+    opacity: 1;
+}
+
+figure img {
+    pointer-events: none;
+}
+
+.empty-list {
+    max-width: 10rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--color-grey-7);
+    border-radius: var(--radius-default2);
+}
+
+.alert {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--color-alert);   
+    animation-name: show-alert; 
+    animation-duration: 0.5s;
+}
+
+.spinner {
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 20rem) {
+    .recent {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 43rem) {
+    .body-desktop {
+        flex-direction: row;
+    }
+
+    aside {
+        height: 100vh;
+        width: 50%;
+    }
+
+    aside section {
+        max-width: 26rem;
+    }
+
+    main {
+        width: 50%;
+    }
+
+    main section {
+        max-width: 19.5rem;
+    }
+
+    .desktop {
+        justify-content: center;
+        width: 90%;
+    }
+
+}
