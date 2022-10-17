@@ -29,6 +29,12 @@ body {
 
 }
 
+.pink {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}
+
 .home-mobile {
   width: 90%;
   padding: 3rem 0;
